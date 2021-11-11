@@ -1477,6 +1477,7 @@ GameObject:
   m_Component:
   - component: {fileID: 158577390}
   - component: {fileID: 158577389}
+  - component: {fileID: 158577391}
   m_Layer: 0
   m_Name: Avatar 1
   m_TagString: Untagged
@@ -1532,6 +1533,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &158577391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158577388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7605317713e37d84eabb9163456c639b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  side: 0
 --- !u!1 &169755820
 GameObject:
   m_ObjectHideFlags: 0
@@ -3436,6 +3450,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LastPacket: 
+  LastPacketConverted:
+    face: []
+    left_hand: []
+    right_hand: []
+    body: []
   IP: localhost
   port: 8643
 --- !u!4 &408950000
@@ -6778,6 +6797,7 @@ GameObject:
   m_Component:
   - component: {fileID: 894502299}
   - component: {fileID: 894502298}
+  - component: {fileID: 894502300}
   m_Layer: 0
   m_Name: Avatar 2
   m_TagString: Untagged
@@ -6832,6 +6852,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &894502300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894502297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7605317713e37d84eabb9163456c639b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  side: 1
 --- !u!1 &900534736
 GameObject:
   m_ObjectHideFlags: 0
@@ -7074,6 +7107,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LastPacket: 
+  LastPacketConverted:
+    face: []
+    left_hand: []
+    right_hand: []
+    body: []
   IP: localhost
   port: 8642
 --- !u!4 &927240195
@@ -10610,7 +10648,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1564443362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10624,6 +10662,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LastPacket: 
+  LastPacketConverted:
+    face: []
+    left_hand: []
+    right_hand: []
+    body: []
   avatars:
   - {fileID: 158577389}
   - {fileID: 894502298}
@@ -14200,6 +14243,8 @@ GameObject:
   - component: {fileID: 2138677393}
   - component: {fileID: 2138677392}
   - component: {fileID: 2138677394}
+  - component: {fileID: 2138677396}
+  - component: {fileID: 2138677395}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -14304,6 +14349,34 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &2138677395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138677391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dccd26ed9d57f943a6514cee47ba240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  side: 1
+  obj: {fileID: 894502297}
+--- !u!114 &2138677396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138677391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dccd26ed9d57f943a6514cee47ba240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  side: 0
+  obj: {fileID: 158577388}
 --- !u!1 &2141691341
 GameObject:
   m_ObjectHideFlags: 0

@@ -84,7 +84,7 @@ public class AvatarController : MonoBehaviour
         // ikTargetsObject.transform.rotation = rig.head.rotation * Quaternion.Inverse(Quaternion.LookRotation(data.HeadForward));
         
         // meshVisualizer.transform.position = rig.head.position - data.HeadPos;
-        transform.Translate(rig.head.position - transform.TransformPoint(data.HeadPos), Space.World);
+        // transform.Translate(rig.head.position - transform.TransformPoint(data.HeadPos), Space.World);
 
         // targets.head.position = rig.head.position;
         // targets.leftHand.position = rig.leftHand.position;

@@ -3,7 +3,7 @@ using unityutilities;
 
 public class RotateStick : MonoBehaviour
 {
-	private Side side;
+	public Side side;
 
 
 	private void Update()

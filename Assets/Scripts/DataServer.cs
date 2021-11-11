@@ -43,11 +43,11 @@ public class DataServer : MonoBehaviour
 
 	public BodyTrackingData GetData()
 	{
-		if (LastPacketConverted != null)
-		{
-			return LastPacketConverted;
-		}
-		else if (LastPacket != "")
+		// if (LastPacketConverted != null)
+		// {
+		// 	return LastPacketConverted;
+		// }
+		if (LastPacket != "")
 		{
 			return JsonUtility.FromJson<BodyTrackingData>(LastPacket);
 		}
